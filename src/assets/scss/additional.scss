@@ -1,0 +1,79 @@
+#footer_container {
+    @media screen and (max-width: 768px)  {
+        display: block !important;
+        margin: auto !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+/* additional.scss or your custom CSS file */
+._2qp0Z {
+    bottom: 25px;
+    left: 94px;
+    z-index: 999;
+
+    @media screen and (max-width:"426px"){
+        left: unset;
+        right: 25px;
+        bottom: 90px !important; 
+    }
+    @media screen and (max-width:"391px") {
+        // left: 315px;
+        right: 25px;
+    }
+
+    @media screen and (max-width:"340px") {
+        // left: 244px;
+        right: 25px;
+    }
+}
+
+._1yCVn {
+    bottom: 110px;
+    left: 94px;
+    z-index: 999;
+
+    @media screen and (max-width:"769px") {
+        height: 466px;
+    }
+
+    @media screen and (max-width:"391px") {
+        left: 53px;
+    }
+
+    @media screen and (max-width:"340px") {
+        left: 16px;
+    }
+}
+
+
+
+
+
+
+.btn-3d {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transition: transform 0.3s, border-color 0.3s, color 0.3s;
+  }
+  
+  .btn-3d:hover {
+    transform: translateY(-2px);
+    border-color: #cccccc;
+    color: #cccccc;
+  }
+  
+
+  .goHome {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .goHome:hover {
+    background-color: black;
+    color: #fff;
+    border:1px solid #fff;
+  }

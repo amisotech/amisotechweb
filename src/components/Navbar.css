@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.first-nav {
+    background-color: black;
+    width: 100%;
+    padding: 10px 50px;
+    display: block;
+  }
+  
+  @media screen and (max-width: 880px) {
+    .first-nav {
+      display: none !important; /* Hide on screens 880px and smaller */
+    }
+  }
+  
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    margin-left: 20px;
+    color: white;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+.right > a {
+    margin-right: 10px;
+}
+
+.email {
+    margin-right: 10px;
+}
+
+.email > svg {
+    margin-right: 5px;
+}
+
+.location {
+    margin-left: 10px;
+}
+
+.location > svg {
+    margin-right: 5px;
+}
+
+span {
+    text-transform: capitalize;    
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+span:hover {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.second-nav {
+    padding: 10px 50px;
+    /* border-bottom: 1px solid gray; */
+    box-shadow: 0 0 5px 0 ;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+
+}
+
+@media screen and (max-width:880px) {
+  .second-nav {
+    padding: 10px 10px ;
+  }
+}
+
+@media screen and (max-width:430px) {
+  .second-nav {
+    padding: 5px 5px ;
+  }
+}
+
+.logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin-left: 20px;
+    width: 150px;
+}
+
+
+ .call-to-action {
+  padding: 10px;
+  border-radius: 20px;
+ }
+
+
+ .call-to-action > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 3px solid rgb(11, 11, 11);
+  padding: 5px;
+  border-radius: 20px;
+ }
+
+ .call-to-action:hover > div {
+  background-color: #31d782;
+ }
+
+
+ .call-to-action > div > svg {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+ }
+
+.call-to-action:hover > div > svg {
+  transform:translateX(115px);
+}
+ 
+
+.call-to-action:hover > div > a > div {
+  transform: translateX(-40px);
+}
+
+ .call-to-action > div > a > div {
+  /* border: 1px solid yellow; */
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  transition: transform 0.3s;
+ }
+
+ .call-to-action > div > a > div > span {
+  font-size: 12px;
+ }
+
+ .call-to-action > div > a > div > span:first-child {
+  font-weight: 600;
+ }
+
+ .call-to-action:hover > div > a > div > span:nth-child(2) {
+  font-weight: 600;
+ }
+
+ .call-to-action span.hover-text {
+  display: none;
+}
+
+.call-to-action:hover span.hover-text {
+  display: inline;
+}
+
+.call-to-action:hover span.default-text {
+  display: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.home-button {
+  display: flex;
+  text-align: center;
+}
+
+.home-button > div:first-child {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.home-button > div:first-child > a {
+  font-size: 24px;
+}
+
+
+@media screen and (max-width:430px) {
+  .logo-div {
+    width: 100px;
+  }
+
+  .call-to-action {
+    padding: 5px;
+  }
+
+  .call-to-action > div {
+    padding: 3px;
+    border: 2px solid rgb(11, 11, 11);
+  }
+  
+  .call-to-action > div > svg {
+    padding: 8px;
+  }
+
+  .call-to-action > div > a > div > span {
+    font-size: 10px;
+  }
+
+  .call-to-action:hover > div > svg {
+    transform:translateX(99px);
+  }
+
+  .call-to-action:hover > div > a > div {
+    transform: translateX(-35px);
+  }
+
+  .home-button > div:first-child {
+    display: none;
+  }
+
+}
+

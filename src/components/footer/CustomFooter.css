@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.customFooter-about {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 0; */
+    /* border: 1px solid red; */
+    padding: 20px 60px;
+    background-color: #2e2d2d;
+    gap: 20px;
+}
+
+@media screen and (max-width:786px) {
+    .customFooter-about {
+        display: none;
+    }
+}
+
+.first-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-contain  {
+    display: flex;
+}
+
+.first-contain > li {
+    list-style: none;
+    /* margin:0 10px; */
+    background-color: #ff3838;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.first-contain > li:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.second-contain {
+    display: flex;
+    /* margin: auto; */
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.second-contain > svg {
+    font-size: 50px;
+    color: #ff3838;
+    transition: transform 0.3s; /* Add a transition effect to smooth the transformation */
+}
+
+.second-contain:hover > svg {
+    transform: rotate(-90deg); /* Rotate the icon on hover */
+}
+
+.second-contain > div {
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+
+}
+
+.second-contain > div > span {
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+
+.third-contain {
+    display: flex;
+    /* margin: auto; */
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.third-contain > svg {
+    font-size: 50px;
+    color: #ff3838;
+    transition: transform 0.3s;
+}
+
+.third-contain:hover > svg {
+    transform: rotate(-90deg); /* Rotate the icon on hover */
+}
+
+.third-contain > div {
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+
+}
+
+.third-contain > div > span {
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+
+
+.forth-contain {
+    display: flex;
+    /* margin: auto; */
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    /* border: 1px solid red; */
+}
+
+.forth-contain > svg {
+    font-size: 50px;
+    color: #ff3838;
+    transition: transform 0.3s;
+}
+
+.forth-contain:hover > svg {
+    transform: rotate(-90deg);
+}
+
+
+.forth-contain > div {
+    margin: auto;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+
+}
+
+.forth-contain > div > span {
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.customFooter-mid {
+    display: flex;
+    justify-content: space-around; /* Distribute columns evenly */
+    padding: 0 50px;
+    color: #fff;
+}
+
+@media screen and (max-width:786px) {
+    .customFooter-mid {
+        display: block;
+        padding: 0 10px;
+    }
+}
+
+.customFooter-mid > div {
+    flex: 1; /* Distribute equal width */
+    padding: 20px; /* Add padding for spacing */
+    
+}
+
+.customFooter-mid > .first-mid > p {
+    margin-top: 20px;
+}
+
+.customFooter-mid > .first-mid > h3 {
+    color: #fff;
+}
+
+.customFooter-mid > .first-mid  > button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff3838; /* Initial background color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform background-color 0.3s, box-shadow 0.3s; /* Add transitions */
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px;
+}
+
+.customFooter-mid > .first-mid  > button:hover {
+    background-color: #e74c3c; /* New background color on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); 
+    transform:rotate(-3deg);
+}
+
+.customFooter-mid > .second-mid > p {
+    margin-top: 20px;
+}
+
+.customFooter-mid > .second-mid > h3 {
+    color: #fff;
+}
+
+.customFooter-mid > .third-mid > div {
+    display: grid;
+    margin-top: 20px;
+}
+
+.customFooter-mid > .third-mid > h3 {
+    color: #fff;
+}
+
+.customFooter-mid > .fourth-mid > h3 {
+    color: #fff;
+}
+
+.copyright {
+    padding: 5px;
+    background-color: #0c0c0c;
+    margin: auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright > div > p {
+    margin: 0;
+}
+
+@media screen and (max-width:426px) {
+    .copyright {
+        display: block;
+        margin: auto 5px;
+        text-align: center;
+    }
+}
